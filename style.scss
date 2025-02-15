@@ -1,0 +1,183 @@
+* {padding: 0;
+    margin: 0;}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 1.5rem; 
+}
+
+.header {
+    width: 768px;
+    height: 358px;
+}
+
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 7200px);
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+  }
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5rem; 
+    font-weight: normal;
+}
+
+.backfon {
+    background-image: url(image/backfon.jpeg);
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+    overflow: hidden;width: 100vw; /* Ширина на весь экран */
+    min-width: 100%; /* Минимальная ширина на весь экран */
+    max-height: 800px;}
+
+
+.header {
+    text-align: start;
+    
+}
+
+.header__title {
+    font-size: 4rem;
+    color: rgb(32, 32, 39);
+    margin-bottom: 20px;
+}
+
+.header__description {
+    font-size: 1.5rem;
+    color: rgb(32, 32, 39);
+    margin-bottom: 30px;
+}
+
+.header__button {
+    font-size: 1.5rem;
+    width: 247px;
+    background-color: black;
+    color: white;
+    padding: 16px 28px; 
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.header__button:hover {
+    background-color: #fff;
+    color: #202027;
+}
+
+body {
+    margin: 0;
+}
+
+/* Контейнер для ограничения фона */
+.background-container {
+    height: 90px; /* Ограничение высоты фона */
+    background-color: rgb(188, 236, 48); /* Цвет фона */
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 90px; /* Высота контейнера */
+}
+
+.strip {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 0; /* Начальная позиция слева */
+    transform: translateY(-50%);
+    animation: moveLeft 40s linear infinite; /* Увеличена длительность анимации */
+}
+
+.strip span {
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    margin-right: 51px; /* Отступ после каждого слова */
+    position: relative;
+}
+
+.strip span::after {
+    content: '';
+    position: absolute;
+    right: -40px; /* Позиция звёздочки */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px; /* Ширина SVG */
+    height: 36px; /* Высота SVG */
+    background-image: url("data:image/svg+xml,%3Csvg width='36.000000' height='36.000000' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Star' d='M18 0L13.13 13.13L0 18L13.13 22.86L18 36L22.86 22.86L36 18L22.86 13.13L18 0Z' fill='%23202027' fill-opacity='1.000000' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0) translateY(-50%); /* Начальная позиция */
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%); /* Сдвигаем на половину ширины */
+    }
+}
+
+.top-content {
+    background-color: rgb(32, 32, 39);
+}
+
+.title-games {
+    color: #fff;
+}
+
+.games {
+padding-top: 72px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 32px;
+}
+
+.game {
+    width: 378px;
+    height: 473px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.game__1 {}
+
+.game__2 {}
+
+.game__3 {}
+
+.game__4 {}
+
+.game__5 {}
+
+.game__6 {}
+
+.img-games {
+    border-radius: 30px;
+}

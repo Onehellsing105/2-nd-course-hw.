@@ -17,7 +17,7 @@ body {
 
 .center {
     padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 7200px);
+    padding-right: calc(50% - 720px);
     margin-left: 7.5rem;
     margin-right: 7.5rem;
   }
@@ -47,26 +47,27 @@ p {
     background-size: cover;
     background-position: center; 
     position: relative;
-    overflow: hidden;width: 100vw; /* Ширина на весь экран */
-    min-width: 100%; /* Минимальная ширина на весь экран */
-    max-height: 800px;}
+    overflow: hidden;width: 100vw;
+    min-width: 100%;
+    height: 800px;}
 
 
 .header {
     text-align: start;
+    padding-top: 196px;
     
 }
 
 .header__title {
     font-size: 4rem;
     color: rgb(32, 32, 39);
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .header__description {
     font-size: 1.5rem;
     color: rgb(32, 32, 39);
-    margin-bottom: 30px;
+    margin-bottom: 48px;
 }
 
 .header__button {
@@ -90,10 +91,9 @@ body {
     margin: 0;
 }
 
-/* Контейнер для ограничения фона */
 .background-container {
-    height: 90px; /* Ограничение высоты фона */
-    background-color: rgb(188, 236, 48); /* Цвет фона */
+    height: 90px;
+    background-color: rgb(188, 236, 48);
     width: 100%;
 }
 
@@ -102,34 +102,34 @@ body {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    height: 90px; /* Высота контейнера */
+    height: 90px; 
 }
 
 .strip {
     white-space: nowrap;
     position: absolute;
     top: 50%;
-    left: 0; /* Начальная позиция слева */
+    left: 0; 
     transform: translateY(-50%);
-    animation: moveLeft 40s linear infinite; /* Увеличена длительность анимации */
+    animation: moveLeft 40s linear infinite;
 }
 
 .strip span {
     display: inline-block;
     padding: 10px;
     color: black;
-    margin-right: 51px; /* Отступ после каждого слова */
+    margin-right: 51px;
     position: relative;
 }
 
 .strip span::after {
     content: '';
     position: absolute;
-    right: -40px; /* Позиция звёздочки */
+    right: -40px; 
     top: 50%;
     transform: translateY(-50%);
-    width: 36px; /* Ширина SVG */
-    height: 36px; /* Высота SVG */
+    width: 36px; 
+    height: 36px;
     background-image: url("data:image/svg+xml,%3Csvg width='36.000000' height='36.000000' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Star' d='M18 0L13.13 13.13L0 18L13.13 22.86L18 36L22.86 22.86L36 18L22.86 13.13L18 0Z' fill='%23202027' fill-opacity='1.000000' fill-rule='evenodd'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
@@ -137,10 +137,10 @@ body {
 
 @keyframes moveLeft {
     0% {
-        transform: translateX(0) translateY(-50%); /* Начальная позиция */
+        transform: translateX(0) translateY(-50%);
     }
     100% {
-        transform: translateX(-50%) translateY(-50%); /* Сдвигаем на половину ширины */
+        transform: translateX(-50%) translateY(-50%);
     }
 }
 
@@ -148,7 +148,12 @@ body {
     background-color: rgb(32, 32, 39);
 }
 
-.title-games {
+.top-content__title {
+    color: #fff;
+    padding-bottom: 24px;
+}
+
+.top-content__info {
     color: #fff;
 }
 
@@ -161,9 +166,19 @@ padding-top: 72px;
 
 .game {
     width: 378px;
-    height: 473px;
+    height: auto;
     background-color: #fff;
     border-radius: 30px;
+}
+
+.game:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.games {
+    overflow: hidden;
 }
 
 .game__1 {}
@@ -178,6 +193,23 @@ padding-top: 72px;
 
 .game__6 {}
 
-.img-games {
+.img-game {
     border-radius: 30px;
+}
+
+.game-info {
+    padding: 32px 32px 32px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    height: auto;
+}
+
+.game-info__namber {
+    font-size: 1rem;
+}
+
+.game-info__name {
+    font-size: 2rem;
 }

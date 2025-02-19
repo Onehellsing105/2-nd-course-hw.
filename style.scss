@@ -12,7 +12,6 @@ body {
 }
 
 .header {
-    width: 768px;
     height: 358px;
 }
 
@@ -48,7 +47,7 @@ p {
     background-size: cover;
     background-position: center; 
     position: relative;
-    overflow: hidden;width: 100vw;
+    overflow: hidden;
     min-width: 100%;
     height: 800px;
     display: flex;
@@ -60,22 +59,29 @@ p {
 .header {
     text-align: start;
     padding-top: 196px;
-    
+    position: relative;
+    z-index: 0;
 }
 
 .header__title {
+    position: relative;
     font-size: 4rem;
     color: rgb(32, 32, 39);
     margin-bottom: 24px;
+    z-index: 1;
 }
 
 .header__description {
+    position: relative;
     font-size: 1.5rem;
     color: rgb(32, 32, 39);
     margin-bottom: 48px;
+    z-index: 1;
 }
 
 .header__button {
+    font-family: inherit;
+    position: relative;
     display: inline-block;
     font-size: 1.5rem;
     width: 247px;
@@ -88,6 +94,7 @@ p {
     transition: background-color 0.3s ease;
     text-decoration: none;
     text-align: center;
+    z-index: 1;
 }
 
 .header__button:hover {
@@ -105,8 +112,50 @@ body {
     width: 100%;
 }
 
+.stars {
+    z-index: 2;}
+
+.stars__pos-1 {
+    top: -351px;
+    right: -590px;
+    height: auto;
+    animation-delay: 0s, 0s;
+}    
+
+.stars__pos-2 {
+    top: 94px;
+    left: 63px;
+    height: auto;
+    animation-delay: 0.5s, 1s;
+}
+
+.stars__pos-3 {
+    top: 69px;
+    left: 156px;
+    height: auto;
+    animation-delay: 1s, 2s;
+}
+
+.stars__pos-4 {
+    bottom: 59px;
+    right: 344px;
+    height: auto;
+    animation-delay: 1.5s, 3s;
+}
+
+.stars__pos-5 {
+    bottom: 135px;
+    right: 455px;
+    height: auto;
+    animation-delay: 2s, 4s;
+}
+
+.star {
+   position: absolute;
+   z-index: 1; 
+}
+
 .container {
-    max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -153,31 +202,73 @@ body {
 }
 
 .top-content {
+    overflow: hidden;
     background-color: rgb(32, 32, 39);
+    position: relative;
+    z-index: 0;
+}
+
+
+.top-content__stars-6 {
+    z-index: 1;
+    width: 584.72px;
+    height: 584.72px;
+    left: 933px;
+    top: 77px;
+    transform: rotate(-6.77deg);
+    animation-delay: 0.5s, 1.5s;
+}
+
+.top-content__stars-7 {
+    z-index: 1;
+    width: 31.34px;
+    height: 31.34px;
+    left: -97.03px;
+    top: 770px;
+    transform: rotate(5.45deg);
+    animation-delay: 1s, 2.5s;
+}
+
+.top-content__stars-8{
+    z-index: 1;
+    width: 54.6px;
+    height: 54.6px;
+    left: -71.82px;
+    top: 822px;
+    transform: rotate(5.45deg);
+    animation-delay: 1.5s, 3.5s;
 }
 
 .top-content__title {
+    position: relative;
     padding-top: 94px;
     color: #fff;
     padding-bottom: 24px;
+    z-index: 2;
 }
 
 .top-content__info {
+    position: relative;
     color: #fff;
+    z-index: 2;
 }
 
 .games {
 padding-top: 72px;
- display: flex;
- flex-wrap: wrap;
- gap: 32px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+max-height: 1470px;
+padding-bottom: 50px;
+gap: 32px;
+z-index: 2;
 }
 
 .game {
+    position: relative;
     width: 378px;
-    height: auto;
     background-color: #fff;
     border-radius: 30px;
+    z-index: 2;
 }
 
 .game:hover {
@@ -186,21 +277,35 @@ padding-top: 72px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.games {
-    overflow: hidden;
+.games__link {
+    text-decoration: none;
+    z-index: 2;
+    color: #202027;
 }
 
-.game__1 {}
+.game-1 {
+    height: 473px;
+}
 
-.game__2 {}
+.game-2 {
+    height: 512px;
+}
 
-.game__3 {}
+.game-3 {
+    height: 473px;
+}
 
-.game__4 {}
+.game-4 {
+    height: 551px;
+}
 
-.game__5 {}
+.game-5 {
+    height: 512px;
+}
 
-.game__6 {}
+.game-6 {
+    height: 551px;
+}
 
 .img-game {
     border-radius: 30px;
@@ -213,12 +318,42 @@ padding-top: 72px;
     justify-content: space-between;
     gap: 16px;
     height: auto;
+    &__number {
+        font-size: 1rem;
+    }
+    &__name {
+        font-size: 2rem;
+    }
 }
 
-.game-info__namber {
-    font-size: 1rem;
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
 }
 
-.game-info__name {
-    font-size: 2rem;
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.star {
+    animation: twinkle 2s infinite;
+}
+
+.stars__pos-2,
+.stars__pos-3,
+.stars__pos-4,
+.stars__pos-5,
+.top-content__stars-6,
+.top-content__stars-7,
+.top-content__stars-8 {
+    animation: twinkle 2s infinite, float 3s infinite;
 }

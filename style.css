@@ -86,7 +86,7 @@ p {
   display: inline-block;
   font-size: 1.5rem;
   width: 247px;
-  background-color: black;
+  background-color: rgb(32, 32, 39);
   color: white;
   padding: 16px 28px;
   border: none;
@@ -319,8 +319,15 @@ body {
   gap: 16px;
   height: auto;
 }
-.game-info__number {
+.game-info__namber {
   font-size: 1rem;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  width: 108px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .game-info__name {
   font-size: 2rem;

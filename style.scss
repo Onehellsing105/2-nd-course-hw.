@@ -85,7 +85,7 @@ p {
     display: inline-block;
     font-size: 1.5rem;
     width: 247px;
-    background-color: black;
+    background-color: rgb(32, 32, 39);
     color: white;
     padding: 16px 28px; 
     border: none;
@@ -318,9 +318,15 @@ z-index: 2;
     justify-content: space-between;
     gap: 16px;
     height: auto;
-    &__number {
+    &__namber {
         font-size: 1rem;
-    }
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        width: 108px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
     &__name {
         font-size: 2rem;
     }

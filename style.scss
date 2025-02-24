@@ -122,6 +122,10 @@ body {
     animation-delay: 0s, 0s;
 }    
 
+.stars__pos-1_mob {
+    display: none;
+}
+
 .stars__pos-2 {
     top: 94px;
     left: 63px;
@@ -363,3 +367,5 @@ z-index: 2;
 .top-content__stars-8 {
     animation: twinkle 2s infinite, float 3s infinite;
 }
+
+@import 'mobile';

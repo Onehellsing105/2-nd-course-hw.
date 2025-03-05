@@ -97,6 +97,25 @@ p {
     z-index: 1;
 }
 
+.header__button_mobile {
+    font-family: inherit;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 247px;
+    background-color: rgb(32, 32, 39);
+    color: white;
+    padding: 16px 28px; 
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
+    display: none;
+}
+
 .header__button:hover {
     background-color: #fff;
     color: #202027;
@@ -490,6 +509,10 @@ z-index: 2;
     line-height: 29px;
     text-align: center; 
 
+}
+
+.background-container_mobile {
+    display: none;
 }
 
 @import 'mobile';

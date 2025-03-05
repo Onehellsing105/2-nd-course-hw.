@@ -261,7 +261,6 @@ body {
 padding-top: 72px;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-max-height: 1470px;
 padding-bottom: 50px;
 gap: 32px;
 z-index: 2;
@@ -322,7 +321,7 @@ z-index: 2;
     justify-content: space-between;
     gap: 16px;
     height: auto;
-    &__namber {
+    &__number {
         font-size: 1rem;
         border-radius: 52.58px;
         background: rgb(247, 247, 247);
@@ -364,8 +363,133 @@ z-index: 2;
 .stars__pos-5,
 .top-content__stars-6,
 .top-content__stars-7,
-.top-content__stars-8 {
+.top-content__stars-8,
+.games-box__stars-9,
+.games-box__stars-10,
+.games-box__stars-11,
+.games-box__stars-12{
     animation: twinkle 2s infinite, float 3s infinite;
+}
+
+.games-box {
+    position: relative;
+    background: rgb(32, 32, 39);
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 46px;
+        padding-bottom: 72px;
+    }
+
+    &__stars-9,
+    &__stars-10,
+    &__stars-11,
+    &__stars-12 {
+        position: absolute;
+        transform: translateY(-50%);
+    }
+
+    &__stars-9 {
+        right: 20px;
+        top: 114px;
+    }
+
+    &__stars-10 {
+        right: -39px;
+        top: 145px;
+    }
+
+    &__stars-11 {
+        top: auto;
+        bottom: 38px;
+        right: -28px;
+        transform: none;
+    }
+
+    &__stars-12 {
+        top: auto;
+        bottom: 69px;
+        right: -94px;
+        transform: none;
+    }
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 144px;
+}
+
+.game-card {
+    height: 500px;
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 30px;
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+    }
+    &__info {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+    }  
+
+    &__button {
+        background-color: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 247px;
+        height: 66px;
+        padding: 16px 28px 16px 28px;
+        border-radius: 60px;
+        margin-top: 12px;
+    }
+    &__button:hover {
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(32, 32, 39);
+    }}
+    
+.game-card__box {
+    margin: 48px 48px 48px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 600px; }
+
+.footer-games {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 150px; 
+    background-color: rgb(189, 237, 53); 
+    color: rgb(0, 0, 0); 
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center; 
+
 }
 
 @import 'mobile';

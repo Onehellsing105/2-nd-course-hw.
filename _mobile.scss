@@ -1,5 +1,12 @@
 @media (min-width: 375px) and (max-width: 900px)
-{
+{   
+    .center {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
     .header {
         margin-left: 3.5rem;
         margin-right: 3.5rem;
@@ -22,6 +29,9 @@
         text-align: center;
     }
     .header__button {
+        display: none;
+    }
+    .header__button_mobile {
         max-width: 229px;
         display: inline-block;
         align-items: center;
@@ -98,5 +108,99 @@
     .top-content {
         display: none;
     }
+    .games-box {
+        display: none;
+    }
+
+    .background-container_mobile {
+        background: rgb(32, 32, 39);
+        display: block;
+        padding: 48px 40px;
+
+    }
+
+    .mobile-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        
+    &__top-title {
+        color: rgb(255, 255, 255);
+    }
+
+    &__game-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        text-align: left;
+        background: rgb(255, 255, 255);
+        border-radius: 30px;
+        flex: 1 1 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        
+    }
+
+    &__img {
+        border-radius: 30px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }}
+
+    .mobile-box-info {
+        padding: 29px 29px 29px 32px;
+
+
+
+        &__title {
+            font-size: 2rem;
+            line-height: 39px;
+            margin-bottom: 16px;
+        }
+        &__description{
+            font-size: 1rem;
+            line-height: 20px;
+            margin-bottom: 32px;
+        }
+        &__button {
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            width: 100%;
+            color:rgb(255, 255, 255);
+            height: 55px;
+        }
+    }
+
+    .footer-games {
+        font-size: 1rem;
+    }
+
 }
+
+
+
+@media (min-width: 600px) {
+
+    .mobile-box__game-card {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);}
+
+
+}
+
+@media (hover: none) and (pointer: coarse) {
+    body {
+        transform: none;
+        box-shadow: none;
+        pointer-events: none;
+    }
+}
+    
+
+
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -327,6 +326,7 @@ body {
 
 .game-5 {
   height: 512px;
+  transform: translateY(34px);
 }
 
 .game-6 {
@@ -512,7 +512,7 @@ body {
 
 @media (hover: hover) and (pointer: fine) {
   .games__link:hover .game {
-    transform: rotate3d(1, 1, 0, 10deg) scale(1.1); /* Наклон в сторону пользователя */
+    transform: rotate3d(1, 1, 0, 10deg) scale(1.1);
   }
 }
 @media (min-width: 375px) and (max-width: 900px) {
@@ -616,7 +616,7 @@ body {
   .background-container_mobile {
     background: rgb(32, 32, 39);
     display: block;
-    padding: 48px 40px;
+    padding: 48px 16px;
   }
   .mobile-box {
     display: flex;
@@ -626,6 +626,9 @@ body {
   }
   .mobile-box__top-title {
     color: rgb(255, 255, 255);
+    font-size: 40px;
+    line-height: 49px;
+    padding-bottom: 48px;
   }
   .mobile-box__game-card {
     position: relative;

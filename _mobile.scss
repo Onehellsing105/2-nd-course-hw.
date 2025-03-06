@@ -115,7 +115,7 @@
     .background-container_mobile {
         background: rgb(32, 32, 39);
         display: block;
-        padding: 48px 40px;
+        padding: 48px 16px;
 
     }
 
@@ -127,6 +127,9 @@
         
     &__top-title {
         color: rgb(255, 255, 255);
+        font-size: 40px;
+        line-height: 49px;
+        padding-bottom: 48px;
     }
 
     &__game-card {

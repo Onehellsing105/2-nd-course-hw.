@@ -326,6 +326,7 @@ z-index: 2;
 
 .game-5 {
     height: 512px;
+    transform: translateY(34px);
 }
 
 .game-6 {
@@ -520,9 +521,11 @@ z-index: 2;
     display: none;
 }
 
+
+
 @media (hover: hover) and (pointer: fine) {
     .games__link:hover .game {
-        transform: rotate3d(1, 1, 0, 10deg) scale(1.1); /* Наклон в сторону пользователя */
+        transform: rotate3d(1, 1, 0, 10deg) scale(1.1); 
     }
 }
 

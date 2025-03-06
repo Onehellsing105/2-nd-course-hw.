@@ -98,6 +98,25 @@ p {
   z-index: 1;
 }
 
+.header__button_mobile {
+  font-family: inherit;
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 247px;
+  background-color: rgb(32, 32, 39);
+  color: white;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+  display: none;
+}
+
 .header__button:hover {
   background-color: #fff;
   color: #202027;
@@ -481,7 +500,17 @@ body {
   text-align: center;
 }
 
+.background-container_mobile {
+  display: none;
+}
+
 @media (min-width: 375px) and (max-width: 900px) {
+  .center {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
   .header {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
@@ -502,6 +531,9 @@ body {
     text-align: center;
   }
   .header__button {
+    display: none;
+  }
+  .header__button_mobile {
     max-width: 229px;
     display: inline-block;
     align-items: center;
@@ -566,5 +598,79 @@ body {
   }
   .top-content {
     display: none;
+  }
+  .games-box {
+    display: none;
+  }
+  .background-container_mobile {
+    background: rgb(32, 32, 39);
+    display: block;
+    padding: 48px 40px;
+  }
+  .mobile-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .mobile-box__top-title {
+    color: rgb(255, 255, 255);
+  }
+  .mobile-box__game-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    flex: 1 1 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .mobile-box__img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .mobile-box-info {
+    padding: 29px 29px 29px 32px;
+  }
+  .mobile-box-info__title {
+    font-size: 2rem;
+    line-height: 39px;
+    margin-bottom: 16px;
+  }
+  .mobile-box-info__description {
+    font-size: 1rem;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+  .mobile-box-info__button {
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 55px;
+  }
+  .footer-games {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 600px) {
+  .mobile-box__game-card {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  body {
+    transform: none;
+    box-shadow: none;
+    pointer-events: none;
   }
 }/*# sourceMappingURL=style.css.map */

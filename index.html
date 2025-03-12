@@ -178,7 +178,7 @@
                     <div class="mobile-box-info">
                     <h3 class="mobile-box-info__title">Угадай число</h3>
                     <p class="mobile-box-info__description">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button class="mobile-box-info__button">
+                    <button onclick="openFile()" class="mobile-box-info__button">
                         Играть!
                     </button>
                     </div>  
@@ -238,5 +238,10 @@
     <footer class="footer-games">
         Все права защищены.
     </footer>
+    <script>
+        function openFile() {
+            window.open('guessthenumber/index.html');
+        }
+    </script>
 </body>
 </html>

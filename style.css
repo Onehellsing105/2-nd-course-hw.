@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +12,10 @@ html {
 body {
   font-family: "Montserrat";
   font-size: 1.5rem;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .header {
@@ -515,7 +520,7 @@ body {
     transform: rotate3d(1, 1, 0, 10deg) scale(1.1);
   }
 }
-@media (min-width: 375px) and (max-width: 900px) {
+@media (min-width: 375px) and (max-width: 1023px) {
   .center {
     padding-left: calc(50% - 187.5px);
     padding-right: calc(50% - 187.5px);
@@ -687,4 +692,62 @@ body {
     box-shadow: none;
     pointer-events: none;
   }
+}
+@media (min-width: 1024px) and (max-width: 1899px) {
+  .header__title {
+    font-size: 3rem;
+  }
+  .header__description {
+    font-size: 1.2rem;
+  }
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  .games {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .game {
+    width: 100%;
+  }
+  .game-card {
+    width: 90%;
+  }
+  .game {
+    height: 624px;
+  }
+  .game-5 {
+    transform: translateY(0px);
+  }
+  .img-game {
+    width: 100%;
+    height: auto;
+  }
+  .game-card {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .game-card__img {
+    width: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .game-card__info {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+#opengame-1, #opengame-1_mobile {
+  padding: 20px; /* Увеличить область клика */
+  background-color: #202027; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 9999; /* Поднять над другими элементами */
 }/*# sourceMappingURL=style.css.map */

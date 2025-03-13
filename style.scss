@@ -9,6 +9,10 @@ html {
 body {
     font-family: 'Montserrat';
     font-size: 1.5rem; 
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .header {
@@ -530,3 +534,14 @@ z-index: 2;
 }
 
 @import 'mobile';
+
+
+#opengame-1, #opengame-1_mobile {
+    padding: 20px; /* Увеличить область клика */
+    background-color: #202027; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 9999; /* Поднять над другими элементами */
+}

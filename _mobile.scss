@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 900px)
+@media (min-width: 375px) and (max-width: 1023px)
 {   
     .center {
     padding-left: calc(50% - 187.5px);
@@ -185,8 +185,6 @@
 
 }
 
-
-
 @media (min-width: 600px) {
 
     .mobile-box__game-card {
@@ -203,7 +201,62 @@
         pointer-events: none;
     }
 }
-    
 
+@media (min-width: 1024px) and (max-width: 1899px) {
+    .header__title {
+        font-size: 3rem; 
+    }
 
+    .header__description {
+        font-size: 1.2rem; 
+    }
 
+    .center {
+        padding-left: calc(50% - 600px); 
+        padding-right: calc(50% - 600px);
+    }
+
+    .games {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .game {
+        width: 100%; 
+    }
+
+    .game-card {
+        width: 90%; 
+    }
+
+    .game {
+        height: 624px;
+    }
+
+    .game-5 {
+        transform: translateY(0px)
+    }
+
+    .img-game {
+        width: 100%;
+        height: auto;
+    }
+
+    .game-card {
+        display: flex;
+        height: 500px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        overflow: hidden;
+
+        &__img {
+            width: 50%;
+            height: 100%; 
+            object-fit: cover;
+        }
+
+        &__info {
+            font-size: 16px;
+            line-height: 24px;}
+        }
+    }

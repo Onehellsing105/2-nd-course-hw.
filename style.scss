@@ -534,14 +534,3 @@ z-index: 2;
 }
 
 @import 'mobile';
-
-
-#opengame-1, #opengame-1_mobile {
-    padding: 20px; /* Увеличить область клика */
-    background-color: #202027; /* Цвет фона */
-    color: white; /* Цвет текста */
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    z-index: 9999; /* Поднять над другими элементами */
-}

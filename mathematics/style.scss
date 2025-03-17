@@ -31,9 +31,10 @@ body {
     margin-bottom: 20px;
   }
 
-  p {
-    font-size: 18px;
+  #expression {
+    font-size: 20px;
     color: #555;
+    margin-bottom: 20px;
   }
 
   input {
@@ -71,80 +72,21 @@ body {
     color: #333;
     margin: 20px 0;
     font-weight: bold;
-  }
 
-  #attempts {
-    font-size: 18px;
-    color: #777;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  #result {
-    margin-top: 20px;
-
-    #result-text {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
+    &.win {
+      color: $success-color;
     }
 
-    #restart {
-      background-color: $success-color;
-
-      &:hover {
-        background-color: darken($success-color, 10%);
-      }
-    }
-
-    #time-mode {
-      background-color: $warning-color;
-
-      &:hover {
-        background-color: darken($warning-color, 10%);
-      }
+    &.lose {
+      color: $danger-color;
     }
   }
 
-  .win {
-    color: $success-color;
-  }
+  #restart {
+    background-color: $success-color;
 
-  .lose {
-    color: $danger-color;
-  }
-}
-
-.achievements {
-  margin-top: 30px;
-  text-align: left;
-
-  h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-
-  #achievements-list {
-    list-style-type: none;
-    padding: 0;
-
-    li {
-      font-size: 18px;
-      color: #555;
-      margin: 5px 0;
-      padding: 5px;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-
-      &::before {
-        content: "🏆";
-        margin-right: 10px;
-      }
+    &:hover {
+      background-color: darken($success-color, 10%);
     }
   }
 }

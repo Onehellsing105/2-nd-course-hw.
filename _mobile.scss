@@ -1,10 +1,10 @@
 @media (min-width: 375px) and (max-width: 1023px)
 {   
+
+    
     .center {
     padding-left: calc(50% - 187.5px);
     padding-right: calc(50% - 187.5px);
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
   }
 
     .header {
@@ -32,7 +32,7 @@
         display: none;
     }
     .header__button_mobile {
-        max-width: 229px;
+        width: 229px;
         display: inline-block;
         align-items: center;
         gap: 10;
@@ -41,6 +41,7 @@
         font-weight: 600;
         line-height: 141.69%;
         text-align: center;
+        text-decoration: none;
     }
 
     .background-container {
@@ -115,11 +116,12 @@
     .background-container_mobile {
         background: rgb(32, 32, 39);
         display: block;
-        padding: 48px 16px;
+        padding: 48px 0px;
 
     }
 
     .mobile-box {
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
@@ -130,6 +132,7 @@
         font-size: 40px;
         line-height: 49px;
         padding-bottom: 48px;
+        text-align: left;
     }
 
     &__game-card {
@@ -140,8 +143,8 @@
         text-align: left;
         background: rgb(255, 255, 255);
         border-radius: 30px;
-        flex: 1 1 100%;
-        max-width: 100%;
+        flex: 1 1 calc(100% - 32px);
+        max-width: calc(100% - 32px);
         box-sizing: border-box;
         
     }
@@ -167,13 +170,24 @@
             margin-bottom: 32px;
         }
         &__button {
-            box-sizing: border-box;
-            border: 1px solid rgb(32, 32, 39);
-            border-radius: 60px;
-            background: rgb(32, 32, 39);
-            width: 100%;
-            color:rgb(255, 255, 255);
-            height: 55px;
+        width: 285px;
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 32px 0px;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(32, 32, 39);
+        border-radius: 60px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
         }
     }
 
@@ -196,11 +210,10 @@
     body {
         transform: none;
         box-shadow: none;
-        pointer-events: none;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1899px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
     .header__title {
         font-size: 3rem; 
     }
@@ -210,8 +223,8 @@
     }
 
     .center {
-        padding-left: calc(50% - 600px); 
-        padding-right: calc(50% - 600px);
+        padding-left: calc(50% - 500px); 
+        padding-right: calc(50% - 500px);
     }
 
     .games {
@@ -256,5 +269,21 @@
         &__info {
             font-size: 16px;
             line-height: 24px;}
+        }
+
+        .games-box__stars-11 {
+            right: calc(-28px - -100px);
+        }
+
+        .games-box__stars-12 {
+            right: calc(-94px - -100px);
+        }
+
+        .games-box__stars-9 {
+            right: calc(20px - -100px);
+        }
+
+        .games-box__stars-10 {
+            right: calc(-39px - -100px);
         }
     }

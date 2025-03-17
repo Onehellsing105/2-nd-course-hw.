@@ -22,10 +22,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 720px);
-  padding-right: calc(50% - 720px);
-  margin-left: 7.5rem;
-  margin-right: 7.5rem;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 h1 {
@@ -466,19 +464,23 @@ body {
   line-height: 32px;
 }
 .game-card__button {
-  background-color: rgb(32, 32, 39);
-  color: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 247px;
   height: 66px;
-  padding: 16px 28px 16px 28px;
+  background-color: rgb(32, 32, 39);
+  color: white;
+  text-decoration: none;
   border-radius: 60px;
-  margin-top: 12px;
+  font-size: 16px;
   transition: transform 0.43s ease-in-out;
 }
 .game-card__button:hover {
@@ -486,6 +488,7 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(32, 32, 39);
   transform: rotate(360deg);
+  border: 1px solid rgb(32, 32, 39);
 }
 
 .game-card__box {
@@ -523,8 +526,6 @@ body {
   .center {
     padding-left: calc(50% - 187.5px);
     padding-right: calc(50% - 187.5px);
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
   }
   .header {
     margin-left: 3.5rem;
@@ -549,7 +550,7 @@ body {
     display: none;
   }
   .header__button_mobile {
-    max-width: 229px;
+    width: 229px;
     display: inline-block;
     align-items: center;
     gap: 10;
@@ -558,6 +559,7 @@ body {
     font-weight: 600;
     line-height: 141.69%;
     text-align: center;
+    text-decoration: none;
   }
   .background-container {
     height: 51px;
@@ -620,9 +622,10 @@ body {
   .background-container_mobile {
     background: rgb(32, 32, 39);
     display: block;
-    padding: 48px 16px;
+    padding: 48px 0px;
   }
   .mobile-box {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -633,6 +636,7 @@ body {
     font-size: 40px;
     line-height: 49px;
     padding-bottom: 48px;
+    text-align: left;
   }
   .mobile-box__game-card {
     position: relative;
@@ -642,8 +646,8 @@ body {
     text-align: left;
     background: rgb(255, 255, 255);
     border-radius: 30px;
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 calc(100% - 32px);
+    max-width: calc(100% - 32px);
     box-sizing: border-box;
   }
   .mobile-box__img {
@@ -667,13 +671,24 @@ body {
     margin-bottom: 32px;
   }
   .mobile-box-info__button {
-    box-sizing: border-box;
-    border: 1px solid rgb(32, 32, 39);
-    border-radius: 60px;
-    background: rgb(32, 32, 39);
-    width: 100%;
-    color: rgb(255, 255, 255);
+    width: 285px;
     height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 32px 0px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(32, 32, 39);
+    border-radius: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   .footer-games {
     font-size: 1rem;
@@ -689,10 +704,9 @@ body {
   body {
     transform: none;
     box-shadow: none;
-    pointer-events: none;
   }
 }
-@media (min-width: 1024px) and (max-width: 1899px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .header__title {
     font-size: 3rem;
   }
@@ -700,8 +714,8 @@ body {
     font-size: 1.2rem;
   }
   .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
   }
   .games {
     grid-template-columns: repeat(2, 1fr);
@@ -739,5 +753,17 @@ body {
   .game-card__info {
     font-size: 16px;
     line-height: 24px;
+  }
+  .games-box__stars-11 {
+    right: 72px;
+  }
+  .games-box__stars-12 {
+    right: 6px;
+  }
+  .games-box__stars-9 {
+    right: 120px;
+  }
+  .games-box__stars-10 {
+    right: 61px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -20,10 +20,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 720px);
-    margin-left: 7.5rem;
-    margin-right: 7.5rem;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
   }
 
 h1 {
@@ -477,19 +475,23 @@ z-index: 2;
     }  
 
     &__button {
-        background-color: rgb(32, 32, 39);
-        color: rgb(255, 255, 255);
+        color: rgb(32, 32, 39);
         font-family: Montserrat;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 247px;
         height: 66px;
-        padding: 16px 28px 16px 28px;
+        background-color: rgb(32, 32, 39);
+        color: white;
+        text-decoration: none;
         border-radius: 60px;
-        margin-top: 12px;
+        font-size: 16px;
         transition: transform 0.43s ease-in-out;
     }
     &__button:hover {
@@ -497,6 +499,7 @@ z-index: 2;
         background-color: rgb(255, 255, 255);
         color: rgb(32, 32, 39);
         transform: rotate(360deg);
+        border: 1px solid rgb(32, 32, 39);
     }}
     
 .game-card__box {

@@ -181,6 +181,7 @@ body {
 }
 
 .container {
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -188,6 +189,8 @@ body {
 }
 
 .strip {
+    max-width: 100vw;
+    width: auto;
     white-space: nowrap;
     position: absolute;
     top: 50%;
@@ -289,7 +292,7 @@ z-index: 2;
 
 .game {
     position: relative;
-    width: 378px;
+    width: auto;
     background-color: #fff;
     border-radius: 30px;
     z-index: 2;
@@ -418,29 +421,30 @@ z-index: 2;
     &__stars-12 {
         position: absolute;
         transform: translateY(-50%);
+        width: auto;
     }
 
     &__stars-9 {
-        right: 20px;
-        top: 114px;
+        right: 123px;
+        top: 93px;
     }
 
     &__stars-10 {
-        right: -39px;
-        top: 145px;
+        right: 44px;
+        top: 126px;
     }
 
     &__stars-11 {
         top: auto;
-        bottom: 38px;
-        right: -28px;
+        bottom: 45px;
+        right: 150px;
         transform: none;
     }
 
     &__stars-12 {
         top: auto;
-        bottom: 69px;
-        right: -94px;
+        bottom: 65px;
+        right: 52px;
         transform: none;
     }
 }
@@ -507,7 +511,7 @@ z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 600px; }
+    width: 100%; }
 
 .footer-games {
     display: flex; 

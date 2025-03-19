@@ -1,6 +1,5 @@
-@media (min-width: 375px) and (max-width: 1023px)
+@media (min-width: 375px) and (max-width: 768px)
 {   
-
     
     .center {
     padding-left: calc(50% - 187.5px);
@@ -157,20 +156,22 @@
     }}
 
     .mobile-box-info {
-        padding: 29px 29px 29px 32px;
 
         &__title {
+            padding-top: 48px;
+            padding-left: 29px;
             font-size: 2rem;
             line-height: 39px;
             margin-bottom: 16px;
         }
         &__description{
+            padding-left: 29px;
             font-size: 1rem;
             line-height: 20px;
             margin-bottom: 32px;
         }
         &__button {
-        width: 285px;
+        width: calc(100% - 48px);
         height: 55px;
         display: flex;
         flex-direction: row;
@@ -180,7 +181,7 @@
         flex: none;
         order: 1;
         flex-grow: 0;
-        margin: 32px 0px;
+        margin: 29px 29px 32px 29px;
         text-decoration: none;
         color: white;
         background-color: rgb(32, 32, 39);
@@ -197,23 +198,20 @@
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 769px) and (max-width: 1440px) {
+
+    .header {
+        margin: 32px;
+    }
 
     .mobile-box__game-card {
-    flex: 1 1 calc(50% - 12px);
-    max-width: calc(50% - 12px);}
+        flex: 1 1 calc(50% - 12px);
+        max-width: calc(50% - 12px);}
 
-
-}
-
-@media (hover: none) and (pointer: coarse) {
-    body {
-        transform: none;
-        box-shadow: none;
+    .top-content {
+        padding-left: 32px;
     }
-}
 
-@media (min-width: 1024px) and (max-width: 1439px) {
     .header__title {
         font-size: 3rem; 
     }
@@ -229,6 +227,9 @@
 
     .games {
         grid-template-columns: repeat(2, 1fr); 
+        &__link {
+            width: 100%;
+        }
     }
 
     .game {
@@ -255,7 +256,7 @@
     .game-card {
         display: flex;
         height: 500px;
-        width: 100%;
+        width: 95%;
         background-color: rgb(255, 255, 255);
         border-radius: 30px;
         overflow: hidden;
@@ -269,6 +270,10 @@
         &__info {
             font-size: 16px;
             line-height: 24px;}
+        }
+
+        .games-box {
+            padding: 32px;
         }
 
         .games-box__stars-11 {
@@ -287,3 +292,21 @@
             right: calc(-39px - -100px);
         }
     }
+
+@media (min-width :1440px)
+{
+    .games-box {
+    &__stars-9 {
+        max-width: 100px;
+    }
+    &__stars-10 {
+        max-width: 100px;
+    }
+    &__stars-11 {
+        max-width: 100px;
+    }
+    &__stars-12 {
+        max-width: 100px;
+    }
+}
+}

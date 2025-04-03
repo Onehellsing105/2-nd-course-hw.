@@ -6,11 +6,7 @@ const people = [
     { name: 'Оксана', age: 47 }
  ];
 
-console.log(people.sort((a, b) => {
-    if (a.age < b.age) return -1;
-    if (a.age > b.age) return 1;
-    return 0;
-  }));
+console.log(people.sort((a, b) => a.age - b.age));
 
 // 2
   function isPositive(num) {

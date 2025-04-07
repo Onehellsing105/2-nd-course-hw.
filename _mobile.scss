@@ -198,7 +198,7 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1440px) {
+@media (min-width: 769px) and (max-width: 1439px) {
 
     .header {
         margin: 32px;
@@ -308,5 +308,10 @@
     &__stars-12 {
         max-width: 100px;
     }
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
 }
 }

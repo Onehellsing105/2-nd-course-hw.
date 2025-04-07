@@ -67,10 +67,14 @@ p {
 
 .header__title {
     position: relative;
-    font-size: 4rem;
     color: rgb(32, 32, 39);
     margin-bottom: 24px;
     z-index: 1;
+    gap: 24;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
 }
 
 .header__description {
@@ -86,12 +90,12 @@ p {
     position: relative;
     display: inline-block;
     font-size: 1.5rem;
-    width: 247px;
+    width: 190px;
     background-color: rgb(32, 32, 39);
     color: white;
-    padding: 16px 28px; 
+    padding: 20px 28px; 
     border: none;
-    border-radius: 30px;
+    border-radius: 60px;
     cursor: pointer; 
     transition: background-color 0.3s ease;
     text-decoration: none;
@@ -327,15 +331,18 @@ z-index: 2;
 
 .game-4 {
     height: 551px;
+    margin-top: -30px;
 }
 
 .game-5 {
     height: 512px;
     transform: translateY(34px);
+    margin-top: -30px;
 }
 
 .game-6 {
-    height: 551px;
+    // height: 551px;
+    margin-top: -30px;
 }
 
 .img-game {

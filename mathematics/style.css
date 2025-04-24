@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgb(217, 182, 255), #f49c83);
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+.game-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.game-container #expression {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.game-container input {
+  padding: 12px;
+  font-size: 16px;
+  margin: 15px 0;
+  width: 80%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+.game-container input:focus {
+  border-color: #007bff;
+}
+.game-container button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+.game-container button:hover {
+  background-color: #0062cc;
+}
+.game-container #message {
+  font-size: 20px;
+  color: #333;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.game-container #message.win {
+  color: #28a745;
+}
+.game-container #message.lose {
+  color: #dc3545;
+}
+.game-container #restart {
+  background-color: #28a745;
+}
+.game-container #restart:hover {
+  background-color: #1e7e34;
+}/*# sourceMappingURL=style.css.map */

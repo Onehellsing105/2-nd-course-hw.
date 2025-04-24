@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgb(217, 182, 255), #f49c83);
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+.game-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.game-container p {
+  font-size: 18px;
+  color: #555;
+}
+.game-container input {
+  padding: 12px;
+  font-size: 16px;
+  margin: 15px 0;
+  width: 80%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+.game-container input:focus {
+  border-color: #007bff;
+}
+.game-container button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+.game-container button:hover {
+  background-color: #0062cc;
+}
+.game-container #message {
+  font-size: 20px;
+  color: #333;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.game-container #attempts {
+  font-size: 18px;
+  color: #777;
+}
+.game-container .hidden {
+  display: none;
+}
+.game-container #result {
+  margin-top: 20px;
+}
+.game-container #result #result-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.game-container #result #restart {
+  background-color: #28a745;
+}
+.game-container #result #restart:hover {
+  background-color: #1e7e34;
+}
+.game-container #result #time-mode {
+  background-color: #ffc107;
+}
+.game-container #result #time-mode:hover {
+  background-color: #d39e00;
+}
+.game-container .win {
+  color: #28a745;
+}
+.game-container .lose {
+  color: #dc3545;
+}
+
+.achievements {
+  margin-top: 30px;
+  text-align: left;
+}
+.achievements h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.achievements #achievements-list {
+  list-style-type: none;
+  padding: 0;
+}
+.achievements #achievements-list li {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.achievements #achievements-list li::before {
+  content: "🏆";
+  margin-right: 10px;
+}/*# sourceMappingURL=game-style.css.map */

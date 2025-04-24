@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #007bff;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --background-gradient: linear-gradient(135deg, rgb(217, 182, 255), #f49c83);
+    --font-family: Arial, sans-serif;
+    --shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background-gradient);
+    font-family: var(--font-family);
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    max-width: 400px;
+    width: 100%;
+}
+
+.game-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-container p {
+    font-size: 18px;
+    color: #555;
+}
+
+.game-container input {
+    padding: 12px;
+    font-size: 16px;
+    margin: 15px 0;
+    width: 80%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.game-container input:focus {
+    border-color: var(--primary-color);
+}
+
+.game-container button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.game-container button:hover {
+    background-color: #0069d9;
+}
+
+#message {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.win {
+    color: var(--success-color);
+}
+
+.lose {
+    color: var(--danger-color);
+}

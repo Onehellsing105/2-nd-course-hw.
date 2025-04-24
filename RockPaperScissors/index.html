@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, ножницы, бумага</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Камень, ножницы, бумага</h1>
+        
+        <div class="choices">
+            <button class="choice-btn" data-choice="rock">
+                <span class="choice-icon">✊</span>
+                Камень
+            </button>
+            <button class="choice-btn" data-choice="paper">
+                <span class="choice-icon">✋</span>
+                Бумага
+            </button>
+            <button class="choice-btn" data-choice="scissors">
+                <span class="choice-icon">✌️</span>
+                Ножницы
+            </button>
+        </div>
+        
+        <div id="result"></div>
+        
+        <div class="scores">
+            <div>Вы: <span id="player-score">0</span></div>
+            <div>Компьютер: <span id="computer-score">0</span></div>
+        </div>
+        
+        <button id="restart">Начать заново</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+$primary-color: #007bff;
+$success-color: #28a745;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+$background-gradient: linear-gradient(135deg, rgb(217, 182, 255), #f49c83);
+$font-family: Arial, sans-serif;
+$shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: $background-gradient;
+  font-family: $font-family;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: $shadow;
+  max-width: 400px;
+  width: 100%;
+
+  h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #555;
+  }
+
+  input {
+    padding: 12px;
+    font-size: 16px;
+    margin: 15px 0;
+    width: 80%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+
+    &:focus {
+      border-color: $primary-color;
+    }
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  #message {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+
+  #attempts {
+    font-size: 18px;
+    color: #777;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #result {
+    margin-top: 20px;
+
+    #result-text {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #restart {
+      background-color: $success-color;
+
+      &:hover {
+        background-color: darken($success-color, 10%);
+      }
+    }
+
+    #time-mode {
+      background-color: $warning-color;
+
+      &:hover {
+        background-color: darken($warning-color, 10%);
+      }
+    }
+  }
+
+  .win {
+    color: $success-color;
+  }
+
+  .lose {
+    color: $danger-color;
+  }
+}
+
+.achievements {
+  margin-top: 30px;
+  text-align: left;
+
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  #achievements-list {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-size: 18px;
+      color: #555;
+      margin: 5px 0;
+      padding: 5px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "🏆";
+        margin-right: 10px;
+      }
+    }
+  }
+}
